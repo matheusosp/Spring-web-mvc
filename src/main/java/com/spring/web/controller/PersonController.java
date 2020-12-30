@@ -39,7 +39,7 @@ public class PersonController {
     }
 
     @PostMapping("/person")
-    public String createJedi(@Valid @ModelAttribute Person person, BindingResult result, RedirectAttributes redirect) {
+    public String createPerson(@Valid @ModelAttribute Person person, BindingResult result, RedirectAttributes redirect) {
 
         if (result.hasErrors()) {
             return "new-person";

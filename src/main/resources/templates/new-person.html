@@ -2,11 +2,11 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Jedis</title>
+    <title>Person</title>
 </head>
 <body>
 
-    <h1>New Jedi</h1>
+    <h1>New Person</h1>
 
     <form th:action="@{/person}" th:object="${person}" method="post">
         <input type="text" name="name"     th:field="*{name}"     th:placeholder="Name"/> <br/>
@@ -21,7 +21,7 @@
     
     <br>
 
-    <a th:href="@{/person}">Jedi</a>
+    <a th:href="@{/person}">Person</a>
 
 </body>
 </html>
