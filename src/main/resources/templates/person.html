@@ -2,14 +2,14 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Jedis</title>
+    <title>Person</title>
 </head>
 
 <body>
 
 <div th:if="${message}" th:text="${message}" th:class="${'alert ' + alertClass}"/>
 
-<h1>Jedi forces</h1>
+<h1>Persons</h1>
 
 <table>
     <tr>
@@ -24,7 +24,7 @@
 
 <br>
 
-<a href="#" th:href="@{/new-Person}">New Jedi</a>
+<a href="#" th:href="@{/new-Person}">New Person</a>
 
 </body>
 </html>
