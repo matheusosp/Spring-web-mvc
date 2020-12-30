@@ -9,7 +9,7 @@
 
 <h1>New Jedi</h1>
 
-<form th:action="@{/jedi}" th:object="${jedi}" method="post">
+<form th:action="@{/person}" th:object="${person}" method="post">
     <input type="text" name="name"     th:field="*{name}"     th:placeholder="Name"/> <br/>
     <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</span>
     <br/>
@@ -22,7 +22,7 @@
 
 <br>
 
-<a th:href="@{/jedi}">Jedi</a>
+<a th:href="@{/person}">Jedi</a>
 
 </body>
 </html>

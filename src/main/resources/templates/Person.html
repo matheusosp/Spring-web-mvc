@@ -16,15 +16,15 @@
         <th>NAME</th>
         <th>LASTNAME</th>
     </tr>
-    <tr th:each="jedi : ${allJedi}">
-        <td th:text="${jedi.name}"> </td>
-        <td th:text="${jedi.lastName}"> </td>
+    <tr th:each="person : ${allPerson}">
+        <td th:text="${person.name}"> </td>
+        <td th:text="${person.lastName}"> </td>
     </tr>
 </table>
 
 <br>
 
-<a href="#" th:href="@{/new-jedi}">New Jedi</a>
+<a href="#" th:href="@{/new-Person}">New Jedi</a>
 
 </body>
 </html>
