@@ -1,5 +1,4 @@
-package br.com.globaLabs.springwebmvc.Model;
-
+package com.spring.web.model;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
@@ -10,16 +9,17 @@ public class Person {
     @Size(min = 3, max = 20, message = "Name must have between 3 and 20 letters")
     private String name;
 
+    @NotBlank(message = "Last Name be blank")
     @Size(max = 20, message = "Last Name must not have more than 20 letters")
     private String lastName;
 
-    public Person (final String name, final String lastName) {
+    public Person(final String name, final String lastName) {
         this.name = name;
         this.lastName = lastName;
     }
 
-    public Person () {
-
+    public Person() {
+        
     }
 
     public String getName () {
@@ -37,4 +37,5 @@ public class Person {
     public void setLastName (final String lastName) {
         this.lastName = lastName;
     }
+
 }
