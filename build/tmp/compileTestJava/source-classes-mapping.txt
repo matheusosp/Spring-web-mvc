@@ -1,0 +1,2 @@
+br/com/globallabs/springwebmvc/SpringWebMvcApplicationTests.java
+ br.com.globallabs.springwebmvc.SpringWebMvcApplicationTests
